@@ -1,0 +1,111 @@
+@import "./reset.css";
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+body {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.container {
+  max-width: 1194px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo-font {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.logo-image-size {
+  width: 38px;
+  height: 41px;
+}
+
+.header {
+  position: relative;
+}
+
+.header__bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  color: #FFFFFF;
+}
+.header__inner a {
+  color: #FFFFFF;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__logo-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__nav-link {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header__sign-in-link {
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 38px;
+}
+
+.header__sign-in-btn {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 40px;
+  background-color: #FFBC51;
+  border-radius: 96px;
+}
+
+.intro {
+  margin-top: 160px;
+  color: #FFFFFF;
+}
+
+.intro__title {
+  font-weight: 800;
+  font-size: 54.7642px;
+  line-height: 67px;
+  max-width: 397px;
+}
+
+.intro__description {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 18.2547px;
+  line-height: 22px;
+  max-width: 421px;
+}
+
+.intro__btn {
+  margin-top: 38px;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px 60px;
+  background: #798AC9;
+  border: 1px solid rgba(171, 163, 163, 0.2);
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */
