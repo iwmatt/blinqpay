@@ -263,6 +263,10 @@ body {
           clip-path: polygon(0% 39%, 55% 7%, 66% 10%, 74% 16%, 80% 21%, 85% 27%, 90% 34%, 95% 40%, 100% 49%, 100% 100%, 0% 101%);
 }
 
+.partners__list-mobile {
+  display: none;
+}
+
 .partners__list {
   display: flex;
   max-width: 833px;
