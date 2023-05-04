@@ -35,3 +35,15 @@ const membersSwiper = () => {
 
 }
 membersSwiper()
+
+if (Swiper && document.querySelectorAll('.customer__swiper')) {
+    const CustomerSwiper = new Swiper('.customer__swiper', {
+        slidesPerView: 1,
+        pagination: {
+            el: '.customer-swiper___pagination'
+        },
+        allowTouchMove: true,
+        spaceBetween: 2000,
+        speed: 700,
+    })
+}
