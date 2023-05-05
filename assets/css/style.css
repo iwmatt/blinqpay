@@ -8,11 +8,25 @@ body {
   overflow-x: hidden;
 }
 
+#scroll-to-top {
+  position: fixed;
+  display: none;
+  bottom: 40px;
+  right: 20px;
+  z-index: 20;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#scroll-to-top:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .container {
-  max-width: 1194px;
+  max-width: 1224px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 .title {
@@ -77,6 +91,10 @@ body {
   position: relative;
 }
 
+#header-gamburger__menu {
+  display: none;
+}
+
 .header__bg {
   position: absolute;
   z-index: -1;
@@ -117,6 +135,10 @@ body {
 .header__nav-link {
   font-weight: 400;
   font-size: 16px;
+  transition: 0.3s;
+}
+.header__nav-link:hover {
+  opacity: 0.7;
 }
 
 .header__sign-in-btn {
@@ -125,12 +147,24 @@ body {
   padding: 12px 40px;
   background-color: #FFBC51;
   border-radius: 96px;
+  border: 1px solid #FFBC51;
+  transition: 0.3s;
+}
+.header__sign-in-btn:hover {
+  background-color: transparent;
+  color: #FFBC51;
+  border-radius: 0px;
 }
 
 .header__sign-in-link {
   font-weight: 700;
   font-size: 16px;
   margin-right: 38px;
+  transition: 0.3s;
+}
+.header__sign-in-link:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .intro {
@@ -184,8 +218,14 @@ body {
   font-size: 18px;
   padding: 15px 60px;
   background: #798AC9;
-  border: 1px solid rgba(171, 163, 163, 0.2);
+  border: 2px solid rgba(171, 163, 163, 0.2);
   border-radius: 4px;
+  transition: 0.3s;
+}
+.intro__btn:hover {
+  background: transparent;
+  border-radius: 50px;
+  border: 2px solid rgb(171, 163, 163);
 }
 
 .share-payments {
@@ -316,7 +356,7 @@ body {
   content: url("../img/advantages-decor-egg.png");
   top: -36px;
   left: -43px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .advantages__single-image {
@@ -324,6 +364,8 @@ body {
 }
 
 .advantages__single-name {
+  position: relative;
+  z-index: 2;
   font-weight: 700;
   font-size: 12.7849px;
   color: #E23434;
@@ -331,6 +373,8 @@ body {
 }
 
 .advantages__single-title {
+  position: relative;
+  z-index: 2;
   margin-top: 4px;
   max-width: 256px;
   width: 100%;
@@ -561,15 +605,29 @@ body {
 .banner__button {
   background: #FFBC51;
   border-radius: 4px;
-  padding: 17px 60px;
+  padding: 12px 58px;
   background: #FFBC51;
+  border: 2px solid #FFBC51;
   border-radius: 4px;
   color: white;
+  transition: 0.3s;
+}
+.banner__button:hover {
+  background: transparent;
+  color: #FFBC51;
+}
+
+.banner__buton:hover + .banner__inner {
+  color: black !important;
 }
 
 .footer {
   background: #210933;
   padding-bottom: 140px;
+}
+
+.footer__desktop-hide {
+  display: none;
 }
 
 .footer__inner {

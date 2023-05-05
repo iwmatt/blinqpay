@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blinqpay</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" media="(max-width: 1600px)" href="./assets/css/adaptive.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="./assets/js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
+        <img id="scroll-to-top" src="./assets/img/scroll-to-top.png" width="80px" alt="scroll to top"/>
         <img class="header__bg-mobile" src="./assets/img/svg/header-bg-mobile.svg" alt="header background" >
         <img class="header__bg" src="./assets/img/header_bg.png" alt="header background">
         <div class="container">
@@ -21,7 +21,7 @@
                     <img class="logo-image-size" src="./assets/img/logo.png" alt="logo">
                     <p class="header__logo-text logo-font">blinqpay</p>
                 </div>
-                <div class="header__nav">
+                <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">Products</a>
@@ -36,10 +36,43 @@
                             <a href="#" class="header__nav-link">Pricing</a>
                         </li>
                     </ul>
-                </div> <!-- header__nav -->
+                </nav> <!-- header__nav -->
                 <div class="header__sign-in">
                     <a class="header__sign-in-link" href="#">Support</a>
                     <button class="header__sign-in-btn">Sign in</button>
+                </div>
+                <div id="header-gamburger__menu">
+                    <div class="header-gamburger__menu-button">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="header-gamburger__menu-wrapper">
+                        <div class="header-gambruger__menu-inner">
+                            <nav class="header-gamburger__nav">
+                                <ul class="header-gamburger__nav-list">
+                                    <li class="header-gamburger__nav-item">
+                                        <a href="#" class="header-gamburger__nav-link">Products</a>
+                                    </li>
+                                    <li class="header-gamburger__nav-item">
+                                        <a href="#" class="header-gamburger__nav-link">Developers</a>
+                                    </li>
+                                    <li class="header-gamburger__nav-item">
+                                        <a href="#" class="header-gamburger__nav-link">Company</a>
+                                    </li>
+                                    <li class="header-gamburger__nav-item">
+                                        <a href="#" class="header-gamburger__nav-link">Pricing</a>
+                                    </li>
+                                    <li class="header-gamburger__nav-item">
+                                        <a href="#" class="header-gamburger__nav-link">Support</a>
+                                    </li>
+                                    <li class="header-gamburger__nav-item">
+                                        <a href="#" class="header-gamburger__nav-link">Sign in</a>
+                                    </li>
+                                </ul>
+                            </nav> <!-- header__nav -->
+                        </div>
+                    </div>
                 </div>
             </div> <!-- header__inner -->
             
@@ -48,8 +81,8 @@
     <section class="intro">
         <div class="container">
             <div class="intro__inner">
-                <img class="intro__bg-1" src="./assets/img/intro-item-large.png" alt="mac">
-                <img class="intro__bg-2" src="./assets/img/intro-item-small.png" alt="mac">
+                <img class="intro__bg-1"  src="./assets/img/intro-item-large.png" alt="mac">
+                <img class="intro__bg-2"  src="./assets/img/intro-item-small.png" alt="mac">
                 <h1 class="intro__title">
                     Get Your Payment Faster
                 </h1>
@@ -60,23 +93,6 @@
                 <button class="intro__btn">
                     Start Now
                 </button>
-                <div class="partners__list partners__list-mobile">
-                    <a href="#">
-                        <img src="./assets/img/Brands/land-roverin-logo.svg" alt="land rover" height="28.1px" style="opacity: 0.4;">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/img/Brands/the-avengers1.svg" alt="avengers" height="28.2px" style="opacity: 0.4;">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/img/Brands/etsy.svg" alt="etsy" height="31px">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/img/Brands/in.svg" alt="linkedin" height="31.4px">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/img/Brands/tiktok-logo.svg" alt="tiktok" height="32.5px">
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -172,7 +188,7 @@
         <div class="container">
             <div class="advantages__inner">
                 <div class="advantages__single">
-                    <div class="advantages__single-info advantages__single-info--margin-left">
+                    <div class="advantages__single-info advantages__single-info--margin-left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="30">
                         <div class="advantages__single-name">
                             CREDIT CARD
                         </div>
@@ -187,11 +203,11 @@
                             Learn more
                         </a>
                     </div>
-                    <img class="advantages__single-image" src="./assets/img/mobile.jpg" alt="mobile" width="522px" height="480px">
+                    <img class="advantages__single-image" src="./assets/img/mobile.jpg" alt="mobile" width="522px" height="480px" data-aos-delay="30" data-aos="fade-left" data-aos-duration="800">
                 </div>
                 <div class="advantages__single">
-                    <img class="advantages__single-image" src="./assets/img/peoples.png" alt="peoples" width="517px" height="307px">
-                    <div class="advantages__single-info">
+                    <img class="advantages__single-image" src="./assets/img/peoples.png" alt="peoples" width="517px" height="307px" data-aos-delay="30" data-aos="fade-right" data-aos-duration="800">
+                    <div class="advantages__single-info" data-aos="fade-left" data-aos-delay="30" data-aos-duration="800">
                         <div class="advantages__single-name">
                             MOBILE TRANSACTION
                         </div>
@@ -208,7 +224,7 @@
                     </div>
                 </div>
                 <div class="advantages__single advantages__single-info--margin-left advantages__single--margin-top">
-                    <div class="advantages__single-info">
+                    <div class="advantages__single-info" data-aos="fade-right" data-aos-duration="800" data-aos-delay="30">
                         <div class="advantages__single-name">
                             SECURE TRANSACTION
                         </div>
@@ -223,7 +239,7 @@
                             Learn more
                         </a>
                     </div>
-                    <img class="advantages__single-image" src="./assets/img/members.png" alt="members" width="517px" height="307px">
+                    <img class="advantages__single-image" src="./assets/img/members.png" alt="members" width="517px" height="307px" data-aos-delay="30" data-aos="fade-left" data-aos-duration="800">
                 </div>
             </div>
         </div>
@@ -389,7 +405,7 @@
                         <img class="logo-image-size" src="./assets/img/logo.png" alt="logo">
                         <p class="logo-font">blinqpay</p>
                     </div>
-                    <div class="footer__social-networks-list">
+                    <div class="footer__social-networks-list footer__mobile-hide">
                         <a class="footer__social-networks-item" href="#">
                             <img src="./assets/img/Brands/instagram.svg" alt="instagram" height="30px">  
                         </a>
@@ -400,7 +416,7 @@
                             <img src="./assets/img/Brands/in.svg" alt="in" height="30px">  
                         </a>
                     </div>
-                    <div class="footer__copyright">
+                    <div class="footer__copyright footer__mobile-hide">
                         <img src="./assets/img/svg/c.svg" alt="copyright">
                         <p class="footer__copyright-text">
                             Copy Right 2021.
@@ -500,8 +516,31 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="footer__bottom footer__desktop-hide">
+                    <div class="footer__social-networks-list">
+                        <a class="footer__social-networks-item" href="#">
+                            <img src="./assets/img/Brands/instagram.svg" alt="instagram" height="30px">  
+                        </a>
+                        <a class="footer__social-networks-item" href="#">
+                            <img src="./assets/img/Brands/twitter.svg" alt="twitter" height="30px"> 
+                        </a>
+                        <a class="footer__social-networks-item" href="#">
+                            <img src="./assets/img/Brands/in.svg" alt="in" height="30px">  
+                        </a>
+                    </div>
+                    <div class="footer__copyright">
+                        <img src="./assets/img/svg/c.svg" alt="copyright">
+                        <p class="footer__copyright-text">
+                            Copy Right 2021.
+                            All rights reserved
+                        </p>
+                    </div>
+                </div>
             </div> <!-- </footer__inner> -->
         </div> <!-- </container -->
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/app.js" type="module"></script> 
 </body>
 </html>

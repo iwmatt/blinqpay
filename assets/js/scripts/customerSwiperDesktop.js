@@ -1,10 +1,10 @@
-const membersSwiper = () => {
+export const customerSwiperDesktop = () => {
     const members = [
-        {x: "0px", y: "0px", selector: document.querySelector("#customer_1")},
-        {x: "480px", y: "170px", selector: document.querySelector("#customer_2")},
-        {x: "180px", y: "350px", selector: document.querySelector("#customer_3")},
-        {x: "610px", y: "300px", selector: document.querySelector("#customer_4")},
-        {x: "470px", y: "-70px", selector: document.querySelector("#customer_5")},
+        {x: "0px", y: "0px", selector: document.getElementById("customer_1")},
+        {x: "480px", y: "170px", selector: document.getElementById("customer_2")},
+        {x: "180px", y: "350px", selector: document.getElementById("customer_3")},
+        {x: "610px", y: "300px", selector: document.getElementById("customer_4")},
+        {x: "470px", y: "-70px", selector: document.getElementById("customer_5")},
     ]
     let activeMemberI = members.indexOf(members[0])
     members.forEach((member) => {
@@ -30,20 +30,5 @@ const membersSwiper = () => {
 
         // Назначем нового активного участника
         activeMemberI = members.indexOf(member);
-
     }
-
-}
-membersSwiper()
-
-if (Swiper && document.querySelectorAll('.customer__swiper')) {
-    const CustomerSwiper = new Swiper('.customer__swiper', {
-        slidesPerView: 1,
-        pagination: {
-            el: '.customer-swiper___pagination'
-        },
-        allowTouchMove: true,
-        spaceBetween: 2000,
-        speed: 700,
-    })
 }
