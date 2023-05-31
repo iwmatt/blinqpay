@@ -2,7 +2,7 @@
 @import './root.css';
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-// 
+// в прод онли woff woff2 ;d 
 body {
     font-family: 'Proxima Nova', sans-serif;
     background-color: #F7F3FA;
@@ -149,12 +149,9 @@ body {
     padding: 12px 40px;
     background-color: #FFBC51;
     border-radius: 96px;
-    border: 1px solid #FFBC51;
     transition: .3s;
     &:hover {
-        background-color: transparent;
-        color: #FFBC51;
-        border-radius: 0px;
+        opacity: 0.8;
     }
 }
 
@@ -216,14 +213,13 @@ body {
     font-weight: 700;
     font-size: 18px;
     padding: 15px 60px;
-    background: #798AC9;
+    background: rgb(121, 138, 201);
     border: 2px solid rgba(171, 163, 163, 0.2);
     border-radius: 4px;
     transition: .3s;
     &:hover {
-        background: transparent;
-        border-radius: 50px;
-        border: 2px solid rgba(171, 163, 163, 1);
+        opacity: 0.9;
+        cursor: pointer;
     }
 }
 
@@ -606,8 +602,7 @@ body {
     color: white;
     transition: .3s;
     &:hover {
-        background: transparent;
-        color: #FFBC51;
+        opacity: 0.7;
     }
 }
 

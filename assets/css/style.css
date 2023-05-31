@@ -147,13 +147,10 @@ body {
   padding: 12px 40px;
   background-color: #FFBC51;
   border-radius: 96px;
-  border: 1px solid #FFBC51;
   transition: 0.3s;
 }
 .header__sign-in-btn:hover {
-  background-color: transparent;
-  color: #FFBC51;
-  border-radius: 0px;
+  opacity: 0.8;
 }
 
 .header__sign-in-link {
@@ -217,15 +214,14 @@ body {
   font-weight: 700;
   font-size: 18px;
   padding: 15px 60px;
-  background: #798AC9;
+  background: rgb(121, 138, 201);
   border: 2px solid rgba(171, 163, 163, 0.2);
   border-radius: 4px;
   transition: 0.3s;
 }
 .intro__btn:hover {
-  background: transparent;
-  border-radius: 50px;
-  border: 2px solid rgb(171, 163, 163);
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .share-payments {
@@ -613,8 +609,7 @@ body {
   transition: 0.3s;
 }
 .banner__button:hover {
-  background: transparent;
-  color: #FFBC51;
+  opacity: 0.7;
 }
 
 .banner__buton:hover + .banner__inner {

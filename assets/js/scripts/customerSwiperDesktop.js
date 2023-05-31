@@ -7,11 +7,13 @@ export const customerSwiperDesktop = () => {
         {x: "470px", y: "-70px", selector: document.getElementById("customer_5")},
     ]
     let activeMemberI = members.indexOf(members[0])
+    
     members.forEach((member) => {
         member.selector.addEventListener("click", () => {
             setActiveMember(member)
         })
     })
+
     const setActiveMember = (member) => {
         // Меняем X, Y,transform, class у участника на которого кликули на значения текущего мембера
         let clickedX = member.x;
