@@ -1,11 +1,10 @@
 const {src, dest, watch, parallel} = require('gulp')
 const scss = require('gulp-sass')(require('sass'))
-const uglify = require('gulp-uglify-es').default
 const concat = require('gulp-concat')
 const autoPrefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
-// const newer = require('gulp-newer')
 const imagemin = require('gulp-imagemin')
+const terser = require('gulp-terser')
 
 
 const scripts = () => {
@@ -17,7 +16,7 @@ const scripts = () => {
             '!src/assets/js/app.min.js'
         ])
         .pipe(concat('app.min.js'))
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(dest('src/assets/js'))
         .pipe(browserSync.stream())
 }
