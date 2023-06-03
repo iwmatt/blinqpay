@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg width="414" height="565" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="paint1_linear_19_563" x1="0.87" x2="0" y1="0.36" y2="0.63">
+   <stop stop-color="#00B5D0"/>
+   <stop offset="1" stop-color="#5C0E62"/>
+  </linearGradient>
+  <linearGradient id="svg_3" x1="0.85" x2="0.13" y1="0.93" y2="0">
+   <stop offset="0.26" stop-color="#5C0E62"/>
+   <stop offset="1" stop-color="#00B5D0"/>
+  </linearGradient>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m320.14,143.02c231.43,-29.54 329.91,139.45 350.22,227.63l-156.27,446.46l-802.34,-308.46l106.82,-305.19c70.76,-7.84 270.13,-30.9 501.56,-60.44z" fill="url(#svg_3)" id="svg_1" transform="matrix(1 0 0 1 0 0) rotate(65.0656 191.062 478.353)"/>
+  <path d="m110.25,352.6c165.43,114.98 297.5,40.98 342.85,-10.4l33.19,-366.41l-713.07,-120.4l-22.69,250.47c50.98,34.35 194.31,131.77 359.72,246.74z" fill="url(#paint1_linear_19_563)" id="svg_2" transform="rotate(-40.8384 118.403 134.415)"/>
+ </g>
+</svg>
